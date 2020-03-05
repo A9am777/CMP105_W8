@@ -4,7 +4,9 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
-
+#include "Ball.h"
+#include "PongBall.h"
+#include "PongPaddle.h"
 
 class Level{
 public:
@@ -23,4 +25,12 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+	Ball ball1;
+	Ball ball2;
+
+	PongBall pBall;
+	PongPaddle pdd1;
+	PongPaddle pdd2;
+
+	sf::Texture tex;
 };
